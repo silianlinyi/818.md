@@ -13,3 +13,15 @@
 
 > ffmpeg -y -i INPUT_FILE -r 30000/1001 -b 2M -bt 4M -vcodec libx264 -vpre hq -threads 0 -async 1 -acodec libfaac -ac 2 
 -ab 160k -ar 48000 -f ipod OUTPUT_FILE.m4v
+
+
+### ffmpeg在树莓派中的安装
+
+* 1. <code>git clone git://source.ffmpeg.org/ffmpeg.git ffmpeg</code>
+* 2. <code>cd ffmpeg</code>
+* 3. <code>.configure</code> Type './configure' to create the configuration. A list of configure options is printed 
+by running '<code>configure --help</code>'. 'configure' can be launched from a directory different from the FFmpeg sources to 
+build the objects out of tree. To do this, use an absolute path when launching 'configure', e.g. 
+'<code>/ffmpegdir/ffmpeg/configure</code>'.
+* 4. <code>make</code> Then type '<code>make</code>' to build FFmpeg. GNU Make 3.81 or later is required.
+* 5. <code>make install</code> Type '<code>make install</code>' to install all binaries and libraries you built.
