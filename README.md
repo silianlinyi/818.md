@@ -25,3 +25,11 @@ build the objects out of tree. To do this, use an absolute path when launching '
 '<code>/ffmpegdir/ffmpeg/configure</code>'.
 * 4. <code>make</code> Then type '<code>make</code>' to build FFmpeg. GNU Make 3.81 or later is required.
 * 5. <code>make install</code> Type '<code>make install</code>' to install all binaries and libraries you built.
+
+### sox在Mac操作系统下的安装
+
+* 1. 下载sox Mac OS X binaries（http://sourceforge.net/projects/sox/files/sox/）
+* 2. 设置环境变量 ~/.bash_profile （一般在这个文件中添加用户级环境变量）
+* 3. 在末尾添加export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+
+
