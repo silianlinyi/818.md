@@ -32,4 +32,8 @@ build the objects out of tree. To do this, use an absolute path when launching '
 * 2. 设置环境变量 ~/.bash_profile （一般在这个文件中添加用户级环境变量）
 * 3. 在末尾添加export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 
+### ffmpeg命令
+> ffmpeg -v verbose -f vfwcap  -s 320x240 -r 25 -i 0 -c:v libx264 -crf 18 -profile:v baseline -maxrate 50k -bufsize 35k 
+-pix_fmt yuv420p  -flags -global_header -hls_time 3 -hls_list_size 3 -hls_wrap 2 -start_number 0 out.m3u8
+
 
