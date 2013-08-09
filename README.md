@@ -1,6 +1,36 @@
 818.md
 ======
 
+五个演示点：
+
+    articles[0] = {
+        title : "武林广场",
+        description : "1",
+        picUrl : "http://www.shipin7.com/static/images/b8c0144298a843bfa2e626bfd8eb799c/bea2ee9bac6acd692d1d9962d027620f/1_web.jpeg",
+        url : "http://115.236.50.15:8080/Ehome/415095074&1&1&0&115.236.50.10&7990.m3u8"
+    };
+    articles[1] = {
+        title : "我家鱼缸",
+        description : "2",
+        picUrl : "http://www.shipin7.com/static/images/b8c0144298a843bfa2e626bfd8eb799c/9816556e25703fac10e287d788e6c092/1_web.jpeg",
+        url : "http://115.236.50.15:8080/Ehome/418359619&1&1&0&115.236.50.10&7990.m3u8"
+    };
+    articles[2] = {
+        title : "可迪超市",
+        description : "3",
+        picUrl : "http://www.shipin7.com/static/images/b8c0144298a843bfa2e626bfd8eb799c/bc1eed135f9d0e7cb91d437d7336fe9f/1_web.jpeg",
+        url : "http://115.236.50.15:8080/Ehome/416121732&1&1&0&115.236.50.10&7990.m3u8"
+    };
+    articles[3] = {
+        title : "广州海康",
+        description : "",
+        picUrl : "http://www.shipin7.com/static/images/b8c0144298a843bfa2e626bfd8eb799c/8ee83abdc80c58e295044970895b8595/1_web.jpeg",
+        url : "http://115.236.50.15:8080/Ehome/416693234&1&1&0&115.236.50.10&8990.m3u8"
+    };
+    
+    
+
+
 浏览器支持的html5不支持流格式、也就是说，将使用ffmpeg编码并存放在硬盘上的文件，通过http传递给浏览器，浏览器可以正常播放。
 但是使用ffmpeg以流的格式实时转换的视频流，浏览器就无法识别。两种方式对于ffmpeg使用的参数有一点不同，使用的参数分别如下：
 
